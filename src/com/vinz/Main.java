@@ -14,7 +14,7 @@ private static Scanner scanner = new Scanner(System.in);
     }
     public static int[] getIntegers(int capacity){
         int array[]=new int[capacity];
-        System.out.println("Enter " +capacity+ "  integer values:\r");
+        System.out.println("Enter " +capacity+ "  values that are valid int:\r");
         for(int i=0;i<array.length;i++){
             array[i]=scanner.nextInt();
         }
@@ -31,6 +31,7 @@ private static Scanner scanner = new Scanner(System.in);
         //length of array already available
         for(int i=0; i<array.length;i++){
             sortedArray[i]=array[i]; //copied content of array to sorted array
+            //manual array copy demonstrated for beginners can be replaced by System.arraycopy();
         }
         boolean flag = true;
         int temp;
